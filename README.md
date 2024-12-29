@@ -23,6 +23,8 @@ bin/rails db:migrate
 
 ## Database initialization
 
+`db:setup`
+
 ## How to run the test suite
 
 `bin/rails test`

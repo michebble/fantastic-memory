@@ -11,14 +11,15 @@
 
   <%= form_with url: session_url, class: "contents" do |form| %>
     <div class="grid">
-      <%= form.label :email_address do |label| %>
-        <%= label %>
+      <div>
+        <label for="email_address">Email</label>
         <%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "Enter your email address", value: params[:email_address]%>
-      <% end %>
-      <%= form.label :password do |label| %>
-        <%= label %>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
         <%= form.password_field :password, required: true, autocomplete: "off", placeholder: "Enter your password", maxlength: 72 %>
-      <% end %>
+      </div>
     </div>
     <%= form.submit "Sign in" %>
 
