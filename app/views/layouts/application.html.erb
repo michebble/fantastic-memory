@@ -28,13 +28,21 @@
         <h1>Fantastic Memory</h1>
         <p>Final Fantasy V Playthrough Logger</p>
       </hgroup>
+      <nav>
+        <ul>
+        <% if authenticated? %>
+          <li><%= link_to 'Sign Out', session_path, data: { turbo_method: :delete }, class: "text-blue-500" %></li>
+        <% else %>
+          <li><%= link_to 'Sign In', new_session_path, class: "text-blue-500" %></li>
+        <% end %>
+        </ul>
+      </nav>
     </header>
     <main class="container">
       <%= yield %>
     </main>
     <footer class="container">
       <small>
-
         <p>&copy; <%= Time.now.year %> Fantastic Memory<br />
         Final Fantasy V and all related trademarks are property of their respective owners and are used here for educational purposes only.</p>
       </small>
