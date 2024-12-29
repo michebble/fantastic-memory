@@ -1,24 +1,36 @@
-# README
+# fantastic-memory
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A website for tracking play throughs of the game Final Fantasy V. This is an exercise for learning about Rails 8.
 
-Things you may want to cover:
+## Ruby version
 
-* Ruby version
+3.4.1
 
-* System dependencies
+## System dependencies
 
-* Configuration
+TBA
 
-* Database creation
+## Configuration
 
-* Database initialization
+TBA
 
-* How to run the test suite
+## Database creation
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bin/rails db:create
+bin/rails db:migrate
+```
 
-* Deployment instructions
+## Database initialization
 
-* ...
+## How to run the test suite
+
+`bin/rails test`
+
+## Services (job queues, cache servers, search engines, etc.)
+
+TBA
+
+## Deployment instructions
+
+TBA
