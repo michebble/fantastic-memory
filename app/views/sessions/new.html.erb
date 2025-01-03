@@ -1,14 +1,5 @@
 <div>
-  <% if alert = flash[:alert] %>
-    <p  id="alert"><%= alert %></p>
-  <% end %>
-
-  <% if notice = flash[:notice] %>
-    <p  id="notice"><%= notice %></p>
-  <% end %>
-
   <h2>Sign in</h2>
-
   <%= form_with url: session_url, class: "contents" do |form| %>
     <div class="grid">
       <div>

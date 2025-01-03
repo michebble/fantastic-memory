@@ -1,0 +1,15 @@
+<% flash.each do |flash_type, message| %>
+  <article
+    class="<%= flash_type %>"
+    data-controller="removals"
+  >
+
+    <%= message %>
+    <span
+      data-action="click->removals#remove"
+      style="cursor: pointer;float: right;"
+    >
+      <%= icon "x-circle"%>
+    </span>
+  </article>
+<% end %>
