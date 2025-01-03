@@ -18,17 +18,26 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <header class="container mx-auto mt-5 px-5">
-      <h1 class="text-4xl font-bold">Fantastic Memory</h1>
+    <header class="container">
+      <hgroup>
+        <h1>Fantastic Memory</h1>
+        <p>Final Fantasy V Playthrough Logger</p>
+      </hgroup>
     </header>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container">
       <%= yield %>
     </main>
+    <footer class="container">
+      <small>
+
+        <p>&copy; <%= Time.now.year %> Fantastic Memory<br />
+        Final Fantasy V and all related trademarks are property of their respective owners and are used here for educational purposes only.</p>
+      </small>
+    </footer>
   </body>
 </html>
