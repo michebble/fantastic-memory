@@ -1,0 +1,7 @@
+.alert {
+  border: 1px solid var(--pico-form-element-invalid-border-color);
+}
+
+.notice {
+  border: 1px solid var(--pico-form-element-valid-border-color);
+}
