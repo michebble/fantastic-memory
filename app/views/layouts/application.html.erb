@@ -24,10 +24,22 @@
   </head>
 
   <body>
-    <header class="container mx-auto mt-5 px-5">
-      <h1 class="text-4xl font-bold">Fantastic Memory</h1>
+    <header class="bg-white">
+      <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">Fantastic Memory</h1>
+
+            <p class="mt-1.5 text-sm text-gray-500">
+              The simple way to track you Final Fantasy V playthroughs.
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="container mx-auto mt-28 px-5 flex">
+
+    <main class="container mx-auto mt-4 px-5 flex flex-col items-center">
+      <%= render partial: "layouts/flash_messages" %>
       <%= yield %>
     </main>
   </body>

@@ -10,19 +10,7 @@
       </p>
 
       <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a
-          class="block w-full rounded-sm bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:ring-3 focus:outline-hidden sm:w-auto"
-          href="#"
-        >
-          Sign Up
-        </a>
-
-        <a
-          class="block w-full rounded-sm px-12 py-3 text-sm font-medium text-blue-600 shadow-sm hover:text-blue-700 focus:ring-3 focus:outline-hidden sm:w-auto"
-          href="#"
-        >
-          Sign In
-        </a>
+        <%= link_to("Sign In", new_session_path, class:"block w-full rounded-sm bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:ring-3 focus:outline-hidden sm:w-auto") %>
       </div>
     </div>
   </div>
