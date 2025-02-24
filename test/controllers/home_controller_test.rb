@@ -3,8 +3,16 @@
 require "test_helper"
 
 class HomeControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get root_url
-    assert_response :success
+  def test_authenticated_user_get_show
+    user = users(:one)
+    sign_in_as(user)
+    get(root_url)
+    assert_response(:success)
+    sign_out
+  end
+
+  def test_unauthenticated_user_redirect_to_session_new
+    get(root_url)
+    assert_redirected_to(new_session_url)
   end
 end
